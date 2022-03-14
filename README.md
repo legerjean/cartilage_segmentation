@@ -8,11 +8,12 @@
 The code runs with Python 3.6.10 , Keras 2.4.3 and Tensorflow 2.2.0.
 
 ### Uploading microscopy data
-The images are stored as a numpy array of dimensions 
+Raw JPEG images from 12 murine bone-to-Achilles tendon interfaces and corresponding BMP manual annotations are converted in numpy arrays using 'generate_data.py'. The 3D images and manual annotations are cropped around the mineralized cartilage region of interest and saved in separated files. For training purposes, 100 slices of each 3D images are selected and concatenated to build a single numpy array with dimensions (1200, 1024, 1024). The same is done with the manual annotations.
 
 ## Running the code
 
 ### Training
+Models with different initializations are trained using different training configuration in the 'training' section in 'main.py'. 
 
 ### Inference 
 Run the 'inference' section in 'main.py'. You should choose an option, which automatically sets a group of parameters in 'predict_segmenter_2d()'. Different options correspond to difference training configurations. Every option considers the inference with a series of models trained with different initializations. 
