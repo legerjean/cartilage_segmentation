@@ -8,6 +8,7 @@
 The code runs with Python 3.6.10 , Keras 2.4.3 and Tensorflow 2.2.0.
 
 ### Uploading microscopy data
+The images are stored as a numpy array of dimensions 
 
 ## Running the code
 
