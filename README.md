@@ -13,7 +13,7 @@ Raw JPEG images from 12 murine bone-to-Achilles tendon interfaces and correspond
 ## Running the code
 
 ### Training
-Models with different initializations are trained using different training configuration in the 'training' section in 'main.py'. 
+Models with different initializations are trained using different training configurations in the 'training' section in 'main.py'. 
 
 ### Inference 
 Run the 'inference' section in 'main.py'. You should choose an option, which automatically sets a group of parameters in 'predict_segmenter_2d()'. Different options correspond to difference training configurations. Every option considers the inference with a series of models trained with different initializations. 
