@@ -22,10 +22,10 @@ Run the 'inference' section in 'main.py'. You should choose an option, which aut
 
 ### Fusions
 
-- Fusion at the prediction level using mojority voting. The fusion at the prediction level using majority voting is performed at the inference stage for TTA. To perform the fusion across different initializations, 'save_fusion_ensemble_full()' is called once and 'save_fusion_ensemble()' five times in 'main.py'. 'save_fusion_ensemble_full()' performs the fusion across 25 initializations. 'save_fusion_ensemble()' performs the fusion across 5 initializations. The structural biostatistics are directly computed after the fusion. 
+- Fusion at the prediction level using majority voting. The fusion at the prediction level using majority voting is performed at the inference stage for TTA. To perform the fusion across different initializations, 'save_fusion_ensemble_full()' is called once and 'save_fusion_ensemble()' five times in 'main.py'. 'save_fusion_ensemble_full()' performs the fusion across 20 initializations. 'save_fusion_ensemble()' performs the fusion across 5 initializations. The structural biostatistics are directly computed after the fusion. 
 
-- Fusion at the biostatistics level using averaging. 
+- Fusion at the biological characteristic level using averaging. The fusion at the characteristic level using averaging is performed by 'average_TTA_bio_stats()' and 'average_ensemble_bio_stats()' in 'main.py' for the TTA and ensembling strategies, respectively.
 
-### Computation of the biostatistics
+### Getting the results of the paper
 
-Pas oublier le GT
+Run the remaining lines in 'main.py' in order to compute the biological statistics using the annotation, compute the calibration, compute uncertainty, and plot the figures and tables shown in the paper.
